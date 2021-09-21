@@ -16,7 +16,7 @@ import (
 //}
 
 // // ---------线程不安全的单例 ---------
-//func GetInstance() *singleton {
+//responsefunc GetInstance() *singleton {
 //	if instance == nil {
 //		instance = &singleton{Name: "hb", Age: 24}
 //	}
@@ -24,7 +24,7 @@ import (
 //}
 
 // // ---------线程安全的单例-加锁---------初始化加锁 init
-//func GetInstance() *singleton {
+//responsefunc GetInstance() *singleton {
 //	if instance != nil {
 //		return instance
 //	}
@@ -47,7 +47,7 @@ import (
 //	Age  int
 //}
 //
-//func GetInstance() *singleton {
+//responsefunc GetInstance() *singleton {
 //	if atomic.AddUint32(flag, 0) != 0 {
 //		return instance
 //	}
