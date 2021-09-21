@@ -254,6 +254,7 @@ func (bc *AddressComponent) BusinessLogicDo(resChan chan interface{}) error {
 type PayMethodComponent struct {
 	// 合成复用基础组件
 	BaseConcurrencyComponent
+
 }
 
 // BusinessLogicDo 并发组件实际填充业务逻辑的地方
