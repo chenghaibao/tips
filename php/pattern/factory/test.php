@@ -4,8 +4,6 @@
  *
  * php单例模式
  *
- * @author  TIGERB <https://github.com/TIGERB>
- * @example 运行 php test.php
  */
 
 
