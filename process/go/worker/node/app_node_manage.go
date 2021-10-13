@@ -20,3 +20,14 @@ func NewAppNodeManage() {
 		}
 	}()
 }
+
+
+func NewAppNode() {
+	agent := NewAppAgent("child")
+	go func() {
+		err := agent.ListenAndServe()
+		if err != nil {
+			log.Printf("app node child exit", zap.Error(err))
+		}
+	}()
+}

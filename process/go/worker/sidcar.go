@@ -38,6 +38,7 @@ func (s *Sidecar) Init() (err error) {
 		return err
 	}
 
+	s.startWorkMange()
 	return nil
 }
 
@@ -59,7 +60,7 @@ func (s *Sidecar) Server() error {
 					break
 				}
 				recvStr := string(buf[:n])
-				fmt.Println("收到Client端发来的数据：", recvStr)
+				fmt.Println("收到TCP端发来的数据：", recvStr)
 				conn.Write([]byte("海宝")) // 发送数据
 			}
 		}()
@@ -70,7 +71,13 @@ func (s *Sidecar) Close() {
 	s.listener.Close()
 }
 
+// 开启phpMaster worker
 func (s *Sidecar) startAppNodeManage() (err error) {
 	node.NewAppNodeManage()
 	return nil
+}
+
+
+func (s *Sidecar) startWorkMange(){
+
 }
