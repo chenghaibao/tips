@@ -11,7 +11,7 @@ type PHPAppNodeManage struct {
 	nodeLock sync.Mutex
 }
 
-func NewAppNodeManage() {
+func  NewAppNodeManage() {
 	agent := NewAppAgent("master")
 	go func() {
 		err := agent.ListenAndServe()

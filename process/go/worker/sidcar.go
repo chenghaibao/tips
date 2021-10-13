@@ -38,10 +38,12 @@ func (s *Sidecar) Init() (err error) {
 		return err
 	}
 
-	s.startWorkMange()
+	s.startWorkMange(s.ctx)
+
 	return nil
 }
 
+// 超时结束进程  删除对应的poolMap 都没做
 func (s *Sidecar) Server() error {
 	for {
 		conn, err := s.listener.Accept() // 监听客户端的连接请求
@@ -78,6 +80,6 @@ func (s *Sidecar) startAppNodeManage() (err error) {
 }
 
 
-func (s *Sidecar) startWorkMange(){
-
+func (s *Sidecar) startWorkMange(ctx context.Context){
+	Start(ctx)
 }

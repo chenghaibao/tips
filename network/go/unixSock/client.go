@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"io"
 	"net"
-	"os"
 	"time"
 )
 
@@ -19,10 +18,11 @@ var (
 )
 
 func main() {
+	url := "/Users/chenghaibao/Downloads/go/tips/app_nodes/master-oMkRetW7xL8JKcXU.sock"
 	// Get unix socket address based on file path
-	dir,_ := os.Getwd()
+	//dir,_ := os.Getwd()
 	// Get unix socket address based on file path
-	uaddr, err := net.ResolveUnixAddr("unix", dir+"/unixSock/unixsock_test.sock")
+	uaddr, err := net.ResolveUnixAddr("unix", url )
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -43,7 +43,7 @@ func main() {
 
 	// Send a request to server
 	// you can define your own rules
-	msg := "tell me current time\n"
+	msg := "test "
 	sendRequest(uconn, []byte(msg))
 
 	// Wait server response
