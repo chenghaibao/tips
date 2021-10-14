@@ -1,0 +1,12 @@
+{
+  "name" : "hb/frame",
+  "description" : "php frame",
+  "type" : "frame",
+  "keywords": [
+    "php","php frame"
+  ],
+  "require": {
+    "php" :">=5.3.0",
+    "symfony/var-dumper": "*"
+  }
+}
