@@ -2,6 +2,9 @@
 
 namespace core;
 
+use core\lib\log;
+use core\lib\route;
+
 class hb {
 
     /**
@@ -15,8 +18,8 @@ class hb {
     public  $assign = [];
 
     static public function run () {
-        \core\lib\log::init();
-        $route = new \core\lib\route();
+        log::init();
+        $route = new route();
         $ctrl = $route->ctrl;
         $action = $route->action;
         $ctrlFile = APP."/ctrl"."/".$ctrl."Ctrl.php";
@@ -24,7 +27,7 @@ class hb {
         if (is_file($ctrlFile)){
             include $ctrlFile;
             $class = new $ctrlClass();
-            \core\lib\log::log("ctrl:$ctrlClass    action:$action");
+//            log::log("ctrl:$ctrlClass    action:$action");
             $class->$action();
         }else{
             throw new \Exception("不存在控制器");

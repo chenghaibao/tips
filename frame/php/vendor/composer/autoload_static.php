@@ -13,6 +13,10 @@ class ComposerStaticInit1058ea4e25445be21aea3d9bcfb09bb3
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Tools\\' => 6,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -22,6 +26,10 @@ class ComposerStaticInit1058ea4e25445be21aea3d9bcfb09bb3
     );
 
     public static $prefixDirsPsr4 = array (
+        'Tools\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bao/plan/src',
+        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',

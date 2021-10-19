@@ -4,6 +4,7 @@ namespace app\ctrl;
 
 use core\lib\conf;
 use core\lib\model;
+use Tools\Tools;
 
 class indexCtrl extends \core\hb {
 
@@ -16,8 +17,8 @@ class indexCtrl extends \core\hb {
 
     public function index(){
         // ctrl
-//        p('it is pool');
-
+        p('it is pool');
+        Tools::hi();
         // model
 //        $model = new model();
 //        $model->model();
