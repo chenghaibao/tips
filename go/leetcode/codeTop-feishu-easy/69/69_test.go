@@ -1,30 +1,66 @@
-package leetcode69
+package leetcode101
 
 import (
 	"fmt"
 	"testing"
 )
 
-func TestMySqrt(t *testing.T){
-	fmt.Println(mySqrt(4))
-	fmt.Println("big apple")
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
+var root *TreeNode
 
-// 确定二分的上下边界   mid*mid <= X  二分查找
-func mySqrt(x int)  int {
-	l, r := 0, x
-	ans := 0
-	for l <= r {
-		mid := l + (r - l) / 2
-		fmt.Println( mid)
-		if mid * mid <= x {
-			ans = mid
-			l = mid + 1
-		} else {
-			r = mid - 1
-		}
+func init() {
+	root = &TreeNode{
+		Val:  1,
+		Left: &TreeNode{
+			Val:   2,
+			Left:  &TreeNode{
+				Val:   3,
+				Left:  nil,
+				Right: nil,
+			},
+			Right: &TreeNode{
+				Val:   4,
+				Left:  nil,
+				Right: nil,
+			},
+		},
+		Right: &TreeNode{
+			Val: 2,
+			Left:  &TreeNode{
+				Val:   4,
+				Left:  nil,
+				Right: nil,
+			},
+			Right: &TreeNode{
+				Val:   3,
+				Left:  nil,
+				Right: nil,
+			},
+		},
 	}
-	return ans
+}
 
+// dfs 判断左节点等于右节点   右节点等于子节点
+func TestDfs(t *testing.T) {
+	fmt.Println(invertTree(root))
+}
+
+func invertTree(root *TreeNode) *TreeNode {
+	return dfs(root)
+}
+
+func dfs(root *TreeNode) *TreeNode {
+	if root == nil {
+		return nil
+	}
+	left   := dfs(root.Left)
+	right  := dfs(root.Right)
+	root.Right =  left
+	root.Left  =  right
+	return root
 }
