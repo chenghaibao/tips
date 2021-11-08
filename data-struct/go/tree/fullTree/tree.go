@@ -43,7 +43,7 @@ func isFull(root *Node) bool {
 	//return flag && isFull(root.left) && isFull(root.right)
 }
 
-//2.最小深度
+//55 贪心.最小深度
 func minDepth(root *Node) int {
 	if root == nil {
 		return 0

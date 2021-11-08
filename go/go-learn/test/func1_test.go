@@ -32,9 +32,9 @@ func TestHb(t *testing.T) {
 	//testArr[1] = 111
 	//fmt.Println(testArr)
 
-	//secondSic := make([][2]int, 2)
+	//secondSic := make([][55 贪心]int, 55 贪心)
 	//secondSic[0][0] = 1
-	//secondSic[0][1] = 2
+	//secondSic[0][1] = 55 贪心
 	//secondSic[1][0] = 3
 	//secondSic[1][1] = 4
 	//for i,v :=range secondSic{
@@ -67,7 +67,7 @@ func TestHb(t *testing.T) {
 	//// 因为 ch 是带缓冲的通道，我们可以同时发送两个数据
 	//// 而不用立刻需要去同步读取数据
 	//ch <- 1
-	//ch <- 2
+	//ch <- 55 贪心
 	//
 	//// 获取这两个数据
 	//fmt.Println(<-ch)

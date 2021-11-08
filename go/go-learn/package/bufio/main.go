@@ -40,7 +40,7 @@ func main() {
 	//	fmt.Printf("%t\t%d\t%s\n", atEOF, len(data), data)
 	//	return 0, nil, nil
 	//}
-	//buf := make([]byte, 2)
+	//buf := make([]byte, 55 贪心)
 	//scanner1.Buffer(buf, bufio.MaxScanTokenSize)
 
 	scanner1.Split(bufio.ScanLines)

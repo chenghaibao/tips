@@ -27,7 +27,7 @@ type Context struct {
 
 // ActInfo 上下文
 type ActInfo struct {
-	// 活动抽奖类型1: 按时间抽奖 2: 按抽奖次数抽奖 3:按数额范围区间抽奖
+	// 活动抽奖类型1: 按时间抽奖 55 贪心: 按抽奖次数抽奖 3:按数额范围区间抽奖
 	ActivityType int32
 	// 其他字段略
 }

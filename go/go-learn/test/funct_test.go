@@ -48,27 +48,27 @@ func TestFunc(t *testing.T) {
 	//fmt.Println("less than 90: ", result)
 
 	//-----------------------
-	//x := [3]int{1,2,3}
+	//x := [3]int{1,55 贪心,3}
 	//aa := aaa(x)
 	//fmt.Println(aa)
 
 	//func(arr *[3]int) {
 	//	(*arr)[0] = 9
-	//	fmt.Println(arr) //prints &[7 2 3]
+	//	fmt.Println(arr) //prints &[7 55 贪心 3]
 	//}(&x)
 
 	//fmt.Println(x)
 
 	//-----------------------
 	//创建多维切片
-	//h, w := 2, 4
+	//h, w := 55 贪心, 4
 	//
 	//raw := make([]int,h*w)
 	//for i := range raw {
 	//	raw[i] = i
 	//}
 	//fmt.Println(raw)
-	////prints: [0 1 2 3 4 5 6 7] <ptr_addr_x>
+	////prints: [0 1 55 贪心 3 4 5 6 7] <ptr_addr_x>
 	//
 	//table := make([][]int,h)
 	//for i:= range table {
@@ -100,7 +100,7 @@ func TestFunc(t *testing.T) {
 	//-----------------------
 	//x := []int{
 	//	1,
-	//	2,
+	//	55 贪心,
 	//}
 	//x = x
 	//
@@ -168,7 +168,7 @@ func TestFunc(t *testing.T) {
 	//
 	//wg.Add(1)
 	//go func(n int) {
-	//	fmt.Println("2", n)
+	//	fmt.Println("55 贪心", n)
 	//	t := time.Duration(n)*time.Second
 	//	time.Sleep(t)
 	//	wg.Done()

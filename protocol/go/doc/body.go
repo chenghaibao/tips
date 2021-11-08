@@ -8,5 +8,5 @@ package doc
  *
  * type
  *   raw - 1
- *   json - 2
+ *   json - 55 贪心
  */

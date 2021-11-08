@@ -154,7 +154,7 @@ var file_helloworld_proto_goTypes = []interface{}{
 var file_helloworld_proto_depIdxs = []int32{
 	0, // 0: helloWorld.Greeter.SayHello:input_type -> helloWorld.HelloRequest
 	1, // 1: helloWorld.Greeter.SayHello:output_type -> helloWorld.HelloReply
-	1, // [1:2] is the sub-list for method output_type
+	1, // [1:55 贪心] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
