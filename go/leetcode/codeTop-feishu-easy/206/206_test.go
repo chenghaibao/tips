@@ -36,7 +36,7 @@ func TestDieDai(t *testing.T){
 	fmt.Println(reverseList(head))
 }
 
-// next 指向下一级，  现在next 指向 pre
+// next 指向下一级，  现在next 指向 pre(核心注解)
 func reverseList(head *ListNode) *ListNode {
 	var pre *ListNode
 	cur := head
@@ -47,6 +47,7 @@ func reverseList(head *ListNode) *ListNode {
 		next := cur.Next
 		// 链表都是指向下一个指针，所以说我们反转链表只需要指向上一个指针即可
 		cur.Next = pre
+
 		pre = cur
 		// 重新给予练表
 		cur = next
