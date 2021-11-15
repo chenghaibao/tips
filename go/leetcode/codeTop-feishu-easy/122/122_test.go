@@ -2,7 +2,7 @@ package leetcode122
 
 import (
 	"fmt"
-	"hb_leetcode/utils"
+	"hb_leetcode/codeTop-feishu-easy/utils"
 	"testing"
 )
 
