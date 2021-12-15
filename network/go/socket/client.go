@@ -12,7 +12,7 @@ import (
 )
 
 // 单纯的websocket 连接      聊天室请求github查看   其实就是维护了一个列表组的概念
-var addr1 = flag.String("addr", "127.0.0.1:9098", "http service address")
+var addr1 = flag.String("addr", "127.0.0.1:8082", "http service address")
 
 func main() {
 	flag.Parse()
