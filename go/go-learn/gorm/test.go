@@ -1,7 +1,7 @@
 package test
 
 func test()  {
-	//user := &Struct.UserPreferenceInfos{Nickname: "test", UserId: 12321, Birth: "123", Sex: "12", Height: 12,
+	//user := &Struct.UserPreferenceInfos{Nickname: "funcInit", UserId: 12321, Birth: "123", Sex: "12", Height: 12,
 	//	Hobby: "asdas"}
 	//user.Add()
 
@@ -15,7 +15,7 @@ func test()  {
 
 	//for _, v := range user1 {
 	//	if v.Id == 1{
-	//		//data :=Struct.UserPreferenceInfos{Nickname: "test", UserId: 12321, Birth: "123", Sex: "12", Height: 12,
+	//		//data :=Struct.UserPreferenceInfos{Nickname: "funcInit", UserId: 12321, Birth: "123", Sex: "12", Height: 12,
 	//		//		Hobby: "asdas"}
 	//		//user1 = append(user1,data)
 	//	}
@@ -49,14 +49,14 @@ func test()  {
 	//		scne2["te33"] = "ssss"
 	//
 	//
-	//		var test []map[string]interface{}
-	//		test = append(test, scne2)
-	//		test = append(test, scne2)
-	//		v["vv"] = test
+	//		var funcInit []map[string]interface{}
+	//		funcInit = append(funcInit, scne2)
+	//		funcInit = append(funcInit, scne2)
+	//		v["vv"] = funcInit
 	//		v["cc"] = 3
 	//
 	//
-	//		for _, value := range test {
+	//		for _, value := range funcInit {
 	//			for _, vv := range value {
 	//				if vv == "1" {
 	//					scne1 := make(map[string]interface{})
