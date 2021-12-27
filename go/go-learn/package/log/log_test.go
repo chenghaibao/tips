@@ -28,7 +28,7 @@ func init(){
 }
 
 func TestLog(t *testing.T) {
-	log.SetPrefix("test  ")
+	log.SetPrefix("funcInit  ")
 	log.Println("飞雪无情的博客:","http://www.flysnow.org")
 	log.Printf("飞雪无情的微信公众号：%s\n","flysnow_org")
 	Info.Println("飞雪无情的博客:","http://www.flysnow.org")

@@ -236,7 +236,7 @@ func (t *BT) BTreeTraverse() {
 		}
 	}
 }
-//test
+//funcInit
 func main() {
 	//插入
 	bsTree := BT{nil,2,[M+1]int{0,21,38,0,0},[M+1]*BT{}}

@@ -46,8 +46,8 @@ func TestHb(t *testing.T) {
 	//fmt.Println(secondSic)
 
 	//testMap := make(map[string]*int)
-	//testMap["test"] = "test"
-	//testMap["test"] = &sum
+	//testMap["funcInit"] = "funcInit"
+	//testMap["funcInit"] = &sum
 	//fmt.Println(testMap)
 
 	//var testArrMap []map[string]int
@@ -56,11 +56,11 @@ func TestHb(t *testing.T) {
 	//var testArrMap []map[string]*int
 	//testArrMap = append(testArrMap,testMap)
 	//for i,v :=range  testArrMap{
-	//	fmt.Println(i,*v["test"])
+	//	fmt.Println(i,*v["funcInit"])
 	//}
 	//testArrMapJson,_ := json.Marshal(testArrMap)
 	//fmt.Println(string(testArrMapJson))
-	//fmt.Println(*testArrMap[0]["test"])
+	//fmt.Println(*testArrMap[0]["funcInit"])
 
 	//ch := make(chan int,50)  没有数量是非缓冲通道  发送必须要接收才能继续执行
 	//

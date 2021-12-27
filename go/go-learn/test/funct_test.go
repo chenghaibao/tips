@@ -177,8 +177,8 @@ func TestFunc(t *testing.T) {
 	//fmt.Println("main exit...")
 
 	//----------------------- struct
-	//test :=&student{"chenghaibao",1}
-	//a := test.aa()
+	//funcInit :=&student{"chenghaibao",1}
+	//a := funcInit.aa()
 	//fmt.Println(a)
 
 	//----------------------- 复制完后值为空

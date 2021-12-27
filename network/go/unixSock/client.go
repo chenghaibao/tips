@@ -43,7 +43,7 @@ func main() {
 
 	// Send a request to server
 	// you can define your own rules
-	msg := "test "
+	msg := "funcInit "
 	sendRequest(uconn, []byte(msg))
 
 	// Wait server response
