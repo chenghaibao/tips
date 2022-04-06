@@ -10,7 +10,7 @@ import (
 
 // TCP 客户端
 func main() {
-	conn, err := net.Dial("tcp4", "127.0.0.1:9800")
+	conn, err := net.Dial("tcp4", "127.0.0.1:9999")
 	if err != nil {
 		fmt.Println("err : ", err)
 		return

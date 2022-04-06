@@ -49,7 +49,7 @@ func main() {
 	/*
 	   File: ../../syntax IsDir: true size: 0
 	   File: ..\..\syntax\painc IsDir: true size: 0
-	   File: ..\..\syntax\painc\main.go IsDir: false size: 813
+	   File: ..\..\syntax\painc\main_test.go IsDir: false size: 813
 	   File: ..\..\syntax\painc\painc.exe IsDir: false size: 2498048
 	   File: ..\..\syntax\path IsDir: true size: 0
 	   File: ..\..\syntax\path\path.exe IsDir: false size: 2851328
